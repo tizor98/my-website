@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import './style.scss'
+import "./assets/sass/main.scss"
+import "bootstrap/js/dist/collapse"
+import "bootstrap/js/dist/dropdown"
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
