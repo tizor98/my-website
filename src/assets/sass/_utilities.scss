@@ -1,1 +1,16 @@
 $theme-colors: map-merge($theme-colors , $custom-colors);
+
+$utilities: map-merge(
+   $utilities,
+   (
+      "height": map-merge(
+         map-get($utilities, "height"),
+         (
+            values: map-merge(
+               map-get(map-get($utilities, "height"), "values"),
+               (60: 60%),
+            ),
+         ),
+      ),
+   ),
+);
